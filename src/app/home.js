@@ -322,7 +322,7 @@ export default function House() {
                 Welcome to AI Chat Assistant
               </h3>
               <p className="text-gray-600 mb-4 text-sm">
-                I'm here to help answer your questions and assist with your
+                Im here to help answer your questions and assist with your
                 tasks. Feel free to ask me anything!
               </p>
             </div>
