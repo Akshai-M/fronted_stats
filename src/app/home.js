@@ -1,5 +1,6 @@
 import { Send, Settings, TrendingUp } from "lucide-react";
 import CircularProgress from "./CircularProgress";
+import Image from "next/image";
 
 export default function House() {
   return (
@@ -9,9 +10,11 @@ export default function House() {
 
         <div className="flex items-center gap-3">
           <Settings className="w-5 h-5 text-gray-600 cursor-pointer" />
-          <img
+          <Image
             src="https://wallpapers.com/images/file/professional-profile-pictures-4162-x-6243-ds59e3wn0uignqdp.jpg"
             alt="User Profile"
+            width={32}
+                    height={32}
             className="w-9 h-9 rounded-full object-cover border-2 border-gray-200"
           />
         </div>
@@ -75,24 +78,32 @@ export default function House() {
                 </div>
 
                 <div className="flex items-center space-x-[-8px] absolute right-0">
-                  <img
+                  <Image
                     src="https://wallpapers.com/images/file/professional-profile-pictures-4162-x-6243-ds59e3wn0uignqdp.jpg"
                     alt="User 1"
+                    width={32}
+                    height={32}
                     className="w-8 h-8 rounded-full border-2 border-white object-cover"
                   />
-                  <img
+                  <Image
                     src="https://tse1.mm.bing.net/th?id=OIP.qADy_l5yGg8j-5jZapJZ2QHaE8&pid=Api&P=0&h=180"
                     alt="User 2"
+                    width={32}
+                    height={32}
                     className="w-8 h-8 rounded-full border-2 border-white object-cover"
                   />
-                  <img
+                  <Image
                     src="https://wallpapers.com/images/file/professional-profile-pictures-4162-x-6243-ds59e3wn0uignqdp.jpg"
                     alt="User 3"
+                    width={32}
+                    height={32}
                     className="w-8 h-8 rounded-full border-2 border-white object-cover"
                   />
-                  <img
+                  <Image
                     src="https://tse1.mm.bing.net/th?id=OIP.qADy_l5yGg8j-5jZapJZ2QHaE8&pid=Api&P=0&h=180"
                     alt="User 4"
+                    width={32}
+                    height={32}
                     className="w-8 h-8 rounded-full border-2 border-white object-cover"
                   />
 
@@ -130,7 +141,7 @@ export default function House() {
                   ></div>
                 </div>
               </div>
-              <dv>
+              <div>
                 <div className="flex justify-between items-center w-full">
                   <p className="mb-1">Stage 3: (Training)</p>
                   <span className="text-sm font-semibold">5</span>
@@ -142,7 +153,7 @@ export default function House() {
                     style={{ width: `${(5 / 14) * 100}%` }}
                   ></div>
                 </div>
-              </dv>
+              </div>
             </div>
             <div className="pt-2 mt-10 bg-gray-100 p-4 rounded-lg text-sm text-gray-700 w-full max-w-md mx-auto">
               <div>
@@ -187,9 +198,11 @@ export default function House() {
               <div className="flex items-center justify-between text-4xl font-extrabold text-black">
                 <span>10%</span>
                 <div className="justify-center flex items-center space-x-3">
-                  <img
+                  <Image
                     src="https://tse1.mm.bing.net/th?id=OIP.qADy_l5yGg8j-5jZapJZ2QHaE8&pid=Api&P=0&h=180"
                     alt="Top Performer"
+                    width={32}
+                    height={32}
                     className="w-10 h-10 rounded-full border-2 border-white object-cover"
                   />
                   <span className="text-[12px] font-extralight border-gray-500 border-2 rounded-2xl px-2 py-1 text-gray-500">
@@ -217,9 +230,11 @@ export default function House() {
                 Prospect Leads
               </h4>
               <div className="flex items-center space-x-4 bg-gray-200 p-3 rounded-lg">
-                <img
+                <Image
                   src="https://randomuser.me/api/portraits/men/32.jpg"
                   alt="Lead Profile"
+                  width={32}
+                    height={32}
                   className="w-10 h-10 rounded-full border object-cover"
                 />
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between w-full">
@@ -230,9 +245,11 @@ export default function House() {
                 </div>
               </div>
               <div className="flex items-center space-x-4 mt-1 bg-gray-200 p-3 rounded-lg">
-                <img
+                <Image
                   src="https://tse4.mm.bing.net/th?id=OIP.dQxgs2Jx3CnfmQG3Wmy-egHaE8&pid=Api&P=0&h=180"
                   alt="Lead Profile"
+                  width={32}
+                    height={32}
                   className="w-10 h-10 rounded-full border object-cover"
                 />
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between w-full">
@@ -257,7 +274,8 @@ export default function House() {
                   org: "Tech Corp",
                   time: "2h ago",
                   msg: "How can we improve our onboarding process?",
-                  img: "https://tse1.mm.bing.net/th?id=OIP.qADy_l5yGg8j-5jZapJZ2QHaE8&pid=Api&P=0&h=180",
+                  img:
+                    "https://tse1.mm.bing.net/th?id=OIP.qADy_l5yGg8j-5jZapJZ2QHaE8&pid=Api&P=0&h=180",
                 },
                 {
                   name: "Sarah Wilson",
@@ -271,13 +289,16 @@ export default function House() {
                   org: "Innovation Ltd",
                   time: "6h ago",
                   msg: "Can we schedule a review meeting?",
-                  img: "https://tse1.mm.bing.net/th?id=OIP.kLuVl7_2soHqjgecM56X2AHaLL&pid=Api&P=0&h=180",
+                  img:
+                    "https://tse1.mm.bing.net/th?id=OIP.kLuVl7_2soHqjgecM56X2AHaLL&pid=Api&P=0&h=180",
                 },
               ].map(({ name, org, time, msg, img }) => (
                 <li key={name} className="flex items-start space-x-4">
-                  <img
+                  <Image
                     src={img}
                     alt={name}
+                    width={32}
+                    height={32}
                     className="w-10 h-10 rounded-full"
                   />
                   <div>
